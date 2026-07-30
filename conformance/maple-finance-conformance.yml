@@ -1,0 +1,29 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.maple.finance/integrate/get-started.md
+note: >-
+  Maple is an onchain (Ethereum + crosschain) DeFi lending / asset-management
+  protocol. Its integration surface is smart contracts + a JS SDK, not a REST
+  API, so the standards below are token/vault ERC standards and onchain
+  interoperability standards rather than web-API standards.
+standards:
+  - id: erc-4626-tokenized-vault
+    conforms: true
+    evidence: >-
+      Docs describe syrupUSDC, syrupUSDT & syrupUSDG as ERC-4626 vaults.
+  - id: erc-20-token
+    conforms: true
+    evidence: >-
+      SYRUP and the syrupUSD assets are ERC-20 tokens (docs: SYRUP Token,
+      Base ERC20 Structure).
+  - id: chainlink-ccip
+    conforms: true
+    evidence: >-
+      Crosschain mint/redeem is built on Chainlink CCIP (Maple CCIP Receiver),
+      per technical-resources/crosschain.
+  - id: oauth2
+    conforms: false
+    evidence: No web-API OAuth surface; access is onchain / wallet-based.
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: No REST API published.

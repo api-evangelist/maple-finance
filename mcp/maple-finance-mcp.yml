@@ -1,0 +1,27 @@
+generated: '2026-07-20'
+method: searched
+status: published
+source: https://docs.maple.finance/integrate/technical-resources/configure-mcp-server.md
+server:
+  name: maple-docs
+  transport: http
+  url: https://docs.maple.finance/~gitbook/mcp
+  description: >-
+    Maple's documentation MCP server (GitBook-hosted). Gives AI agents and
+    MCP-enabled tools (Cursor, Claude Code, etc.) access to the full Maple
+    protocol and integration context for syrupUSD integration and protocol
+    questions.
+config_example: |
+  {
+    "mcpServers": {
+      "maple-docs": {
+        "type": "http",
+        "url": "https://docs.maple.finance/~gitbook/mcp"
+      }
+    }
+  }
+notes:
+  - The docs host also supports dynamic querying via HTTP GET on any page URL with
+    an `ask` (and optional `goal`) query parameter, e.g.
+    `GET https://docs.maple.finance/readme.md?ask=<question>`.
+tools: []   # server is a documentation-context MCP server; no discrete tool list published

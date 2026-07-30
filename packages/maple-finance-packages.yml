@@ -1,0 +1,16 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.maple.finance/technical-resources/sdk/installation.md
+packages:
+  - language: javascript
+    registry: npm
+    name: "@maplelabs/maple-js"
+    url: https://www.npmjs.com/package/@maplelabs/maple-js
+    install: npm install @maplelabs/maple-js
+    official: true
+    repo: https://github.com/maple-labs/maple-js
+    latest: 1.12.1
+    notes: >-
+      Official Maple Labs JavaScript/TypeScript SDK for integrating with the
+      Maple protocol. Requires ethers v5. Verified first-party on npm
+      (author "Maple Labs", maintainers on @maple.finance addresses).
