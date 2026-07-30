@@ -1,8 +1,28 @@
 aid: maple-finance
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/maple-finance.png
 name: Maple Finance
-description: 'Maple Finance is a company surfaced as a portfolio company of polychain and added to the
-  API Evangelist network as a stub for enrichment. Sector: defi-lending. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Maple Finance is an onchain asset management and institutional DeFi lending
+  protocol launched in 2019 (Maple Labs Pty Ltd) that has facilitated over $23
+  billion in loan originations. It offers digital-asset lending and yield
+  products for individuals and institutions, including the syrupUSDC, syrupUSDT
+  and syrupUSDG ERC-4626 vaults, institutional secured lending, and a cash
+  management pool, spanning Ethereum mainnet and crosschain deployments (Solana,
+  Arbitrum, Base, Plasma) via Chainlink CCIP. Maple's integration surface is
+  onchain smart contracts plus the official @maplelabs/maple-js SDK, a GitBook
+  documentation MCP server, and an extensive technical reference covering loans,
+  pools, strategies, withdrawal managers, and the SYRUP token.
 url: https://raw.githubusercontent.com/api-evangelist/maple-finance/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +32,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Defi Lending
+- DeFi
+- Onchain Asset Management
+- Institutional Lending
+- Stablecoin Yield
+- Ethereum
+- SDK
+- MCP
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +52,42 @@ maintainers:
 common:
 - type: Website
   url: https://maple.finance
+- type: DeveloperPortal
+  url: https://docs.maple.finance
+- type: Documentation
+  url: https://docs.maple.finance
+- type: APIReference
+  url: https://docs.maple.finance/technical-resources/interfaces
+- type: GettingStarted
+  url: https://docs.maple.finance/integrate/get-started
+- type: GitHubOrganization
+  url: https://github.com/maple-labs
+- type: SignUp
+  url: https://maple.finance/app
+- type: Support
+  url: https://docs.maple.finance/contact-us/get-in-touch
+- type: TermsOfService
+  url: https://docs.maple.finance/legal/interface-terms-of-use
+- type: PrivacyPolicy
+  url: https://docs.maple.finance/legal/privacy-policy
+- type: LLMsTxt
+  url: llms/maple-finance-llms.txt
+- type: MCPServer
+  name: Maple Docs MCP Server
+  url: mcp/maple-finance-mcp.yml
+- type: Packages
+  url: packages/maple-finance-packages.yml
+- type: SDKs
+  name: Maple JS SDK (@maplelabs/maple-js)
+  url: packages/maple-finance-packages.yml
+- type: Conformance
+  url: conformance/maple-finance-conformance.yml
+- type: DomainSecurity
+  url: security/maple-finance-domain-security.yml
+- type: WellKnown
+  url: well-known/maple-finance-well-known.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 6
+  pass: local-v1
